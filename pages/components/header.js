@@ -11,3 +11,5 @@ const Header =()=>{
         <link rel="stylesheet" href="../stylesheets/index.css" />
     </Head>);
 }
+
+export default Header;

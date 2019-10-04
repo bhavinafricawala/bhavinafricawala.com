@@ -1,6 +1,6 @@
 import React from 'react';
-import '../bootstrap.min.css';
-import '../App.css';
+import '../stylesheets/bootstrap.min.css';
+import '../stylesheets/App.css';
 import { Link } from 'react-browser-router';
 
 const NavigationBar=({ pagename }) =>{

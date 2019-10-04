@@ -1,6 +1,6 @@
 import React from 'react';
-import '../App.css';
-import '../bootstrap.min.css';
+import '../stylesheets/App.css';
+import '../stylesheets/bootstrap.min.css';
 
 
 const HomePage=() => {

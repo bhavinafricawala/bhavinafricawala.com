@@ -1,6 +1,4 @@
 import React from 'react';
-import '../stylesheets/bootstrap.min.css';
-import '../stylesheets/App.css';
 
 
 const NavigationBar=({ pagename }) =>{

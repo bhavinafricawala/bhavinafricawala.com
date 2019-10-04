@@ -1,13 +1,13 @@
 import React from 'react';
 import '../stylesheets/bootstrap.min.css';
 import '../stylesheets/App.css';
-import { Link } from 'react-browser-router';
+
 
 const NavigationBar=({ pagename }) =>{
   return (
     <nav className="navbar navbar-expand-lg navbar-light nav-bg-dark fixed-top">
       <span className="navbar-brand">
-        <Link to="/">
+        <a href="/">
           <img
             src="images/android-chrome-192x192.png"
             alt="Bhavin Africawala"
@@ -15,8 +15,8 @@ const NavigationBar=({ pagename }) =>{
             height="45"
             className="d-inline-block align-middle"
           />
-        </Link>
-        <span className="navbar-brand mb-0 h2"><Link className="brand-color" to="/">Bhavin Africawala</Link></span>
+        </a>
+        <span className="navbar-brand mb-0 h2"><a className="brand-color" href="/">Bhavin Africawala</a></span>
       </span>
       <button
         className="navbar-toggler"
@@ -33,9 +33,9 @@ const NavigationBar=({ pagename }) =>{
               pagename === 'about' ? 'nav-item active' : 'nav-item'
             }
           >
-            <Link className="nav-link link" to="/about">
+            <a className="nav-link link" href="/about">
                 About
-            </Link>
+            </a>
 
           </li>
           <li
@@ -43,9 +43,9 @@ const NavigationBar=({ pagename }) =>{
               pagename === 'contact' ? 'nav-item active' : 'nav-item'
             }
           >
-            <Link className="nav-link link" to="/contact">
+            <a className="nav-link link" href="/contact">
                 Contact
-            </Link>
+            </a>
 
           </li>
         </ul>

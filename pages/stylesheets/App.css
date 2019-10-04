@@ -1,0 +1,197 @@
+html {
+  font-family: sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  filter: opacity(80%);
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 502px) {
+  .fullscreen-bg__video {
+    top: 0;
+    right: 100px;
+    width: 350%;
+    height: auto;
+  }
+}
+
+.nav-bg-dark {
+  background-color: rgba(191, 204, 217, 0.6);
+}
+
+.navbar-brand > span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.banner h1,
+.banner h3,
+.banner h5 {
+  margin: 0;
+  text-shadow: 2px 2px 6px #000;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.banner {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-brand {
+  padding-left: 5px;
+}
+
+.activelink {
+  font-weight: bold;
+}
+
+.brand-color {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.brand-color:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #61dafb;
+}
+
+.footer {
+  background: none;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footer ul li {
+  float: center;
+}
+
+.footerheader {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footerlink {
+  padding: 5px 8px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.footerheader h3 {
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 40px;
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 1.17em;
+  color: #fff;
+}
+
+footer {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}

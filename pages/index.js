@@ -1,8 +1,19 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React from 'react';
+import HomePage from './components/homepage';
+import NavigationBar from './components/navbar';
+import BackGround from './components/background';
+import './stylesheets/App.css';
+import '/stylesheets/bootstrap.min.css';
+import '/stylesheets/Home.css';
 
-const InputElement = () => {
-  return <input placeholder="Enter Some Text" />;
+
+const FirstPage = () => {
+  return (<div className="App">
+  <BackGround />
+  <NavigationBar pagename="home" />
+  <HomePage />
+</div>);
 };
 
-export default InputElement;
+export default FirstPage;

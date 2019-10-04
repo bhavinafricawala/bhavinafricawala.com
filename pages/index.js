@@ -7,7 +7,7 @@ import Header from './components/header';
 
 const FirstPage = () => {
   return (<div className="App">
-    <Header/>
+  <Header/>
   <BackGround />
   <NavigationBar pagename="home" />
   <HomePage />

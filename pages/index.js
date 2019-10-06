@@ -6,7 +6,8 @@ import BackGround from './components/background';
 import Header from './components/header';
 
 const FirstPage = () => {
-  return (<div className="App">
+  return (
+  <div className="App">
   <Header/>
   <BackGround />
   <NavigationBar pagename="home" />

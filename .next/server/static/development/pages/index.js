@@ -107,13 +107,15 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "D:\\My-Projects\\React-App\\bhavinafricawala.com\\pages\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+/* eslint-disable no-unused-vars */
+
 
 const InputElement = () => {
   return __jsx("input", {
     placeholder: "Enter Some Text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 5
     },
     __self: undefined
   });

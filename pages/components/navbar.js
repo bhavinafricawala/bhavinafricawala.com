@@ -7,7 +7,7 @@ const NavigationBar=({ pagename }) =>{
       <span className="navbar-brand">
         <a href="/">
           <img
-            src="images/android-chrome-192x192.png"
+            src="static/images/android-chrome-192x192.png"
             alt="Bhavin Africawala"
             width="45"
             height="45"

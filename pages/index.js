@@ -3,12 +3,15 @@ import React from 'react';
 import HomePage from './components/homepage';
 import NavigationBar from './components/navbar';
 import BackGround from './components/background';
-import Header from './components/header';
 
 const FirstPage = () => {
   return (
   <div className="App">
-  <Header/>
+  <Head>
+        <link rel="stylesheet" href="/static/bootstrap.min.css" />
+        <link rel="stylesheet" href="/static/App.css" />        
+        <link rel="stylesheet" href="/static/Home.css" />
+    </Head>
   <BackGround />
   <NavigationBar pagename="home" />
   <HomePage />

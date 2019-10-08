@@ -3,6 +3,7 @@ import React from 'react';
 import HomePage from './components/homepage';
 import NavigationBar from './components/navbar';
 import BackGround from './components/background';
+import Head from 'next/head';
 
 const FirstPage = () => {
   return (

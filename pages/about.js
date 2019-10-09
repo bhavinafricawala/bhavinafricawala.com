@@ -1,24 +1,26 @@
-import React from 'react';
-import NavigationBar from './components/navbar';
-import AboutPost from './components/aboutpost';
-import Resume from './components/resume';
-import Head from 'next/head';
+import React from "react";
+import NavigationBar from "./components/navbar";
+import AboutPost from "./components/aboutpost";
+import Resume from "./components/resume";
+import Footer from "./components/footer";
+import Head from "next/head";
 
 const About = () => {
-    
-    return(
+  return (
     <div className="aboutpage">
-        <Head>
-            <link rel="stylesheet" href="/static/bootstrap.min.css" />
-            <link rel="stylesheet" href="/static/App.css" />        
-            <link rel="stylesheet" href="/static/About.css" />
-        </Head>
-        <NavigationBar pagename="about" />
-        <div className="post">
-            <AboutPost />
-            <Resume />
-        </div>
-    </div>);
-}
+      <Head>
+        <link rel="stylesheet" href="/static/bootstrap.min.css" />
+        <link rel="stylesheet" href="/static/App.css" />
+        <link rel="stylesheet" href="/static/About.css" />
+      </Head>
+      <NavigationBar pagename="about" />
+      <div className="post">
+        <AboutPost />
+        <Resume />
+      </div>
+      <Footer />
+    </div>
+  );
+};
 
 export default About;

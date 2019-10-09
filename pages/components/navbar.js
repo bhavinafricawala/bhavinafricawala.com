@@ -1,7 +1,6 @@
-import React from 'react';
+import React from "react";
 
-
-const NavigationBar=({ pagename }) =>{
+const NavigationBar = ({ pagename }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light nav-bg-dark fixed-top">
       <span className="navbar-brand">
@@ -14,42 +13,36 @@ const NavigationBar=({ pagename }) =>{
             className="d-inline-block align-middle"
           />
         </a>
-        <span className="navbar-brand mb-0 h2"><a className="brand-color" href="/">Bhavin Africawala</a></span>
+        <span className="navbar-brand mb-0 h2">
+          <a className="brand-color" href="/">
+            Bhavin Africawala
+          </a>
+        </span>
       </span>
       <button
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#collapsingNavbar"
-      >
+        data-target="#collapsingNavbar">
         <span className="navbar-toggler-icon" />
       </button>
       <div className="navbar-collapse collapse" id="collapsingNavbar">
         <ul className="navbar-nav ml-auto ">
-          <li
-            className={
-              pagename === 'about' ? 'nav-item active' : 'nav-item'
-            }
-          >
+          <li className={pagename === "about" ? "nav-item active" : "nav-item"}>
             <a className="nav-link link" href="/about">
-                About
+              About
             </a>
-
           </li>
           <li
-            className={
-              pagename === 'contact' ? 'nav-item active' : 'nav-item'
-            }
-          >
+            className={pagename === "contact" ? "nav-item active" : "nav-item"}>
             <a className="nav-link link" href="/contact">
-                Contact
+              Contact
             </a>
-
           </li>
         </ul>
       </div>
     </nav>
   );
-}
+};
 
 export default NavigationBar;

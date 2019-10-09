@@ -1,7 +1,6 @@
-import React from 'react';
+import React from "react";
 
-
-const  BackGround=() =>{
+const BackGround = () => {
   return (
     <div className="fullscreen-bg">
       <video loop muted autoPlay className="fullscreen-bg__video">
@@ -9,6 +8,6 @@ const  BackGround=() =>{
       </video>
     </div>
   );
-}
+};
 
 export default BackGround;
